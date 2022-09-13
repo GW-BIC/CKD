@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 24 17:23:00 2022
-
-@author: VHAWASShaoY
-"""
 
 import traceback
 import adodbapi
