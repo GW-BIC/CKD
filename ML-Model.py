@@ -13,11 +13,11 @@ import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
-    mainDir = r'P:\ORD_Ahmed_201906060D\Yijun'
+    mainDir = r'P:\ORD_Ahmed_*******\*****'
     connectors = (
     'Provider=SQLOLEDB',
-    'Data Source=vhacdwrb03.vha.med.va.gov',
-    'Initial Catalog=ORD_Ahmed_201906060D',
+    'Data Source=*******',
+    'Initial Catalog=*******',
     'Integrated Security=SSPI',)
 
     columns = []
@@ -445,3 +445,4 @@ group by PatientICN
         auc_tr*100,auc_vl*100))
     print('{:.3f}    {:.3f}    {:.3f}'.format(
         auc_tr*100,auc_vl*100,auc_te*100))
+
