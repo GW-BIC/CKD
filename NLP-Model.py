@@ -85,19 +85,19 @@ def ReadVTT(vttfile):
     return metas,snippets,seglabels,kws
 
 if __name__ == '__main__':
-    mainDir = r'P:\ORD_Ahmed_201906060D\Yijun'
+    mainDir = r'P:\**************\*****'
     connectors = (
     'Provider=SQLOLEDB',
-    'Data Source=vhacdwrb03.vha.med.va.gov',
-    'Initial Catalog=ORD_Ahmed_201906060D',
+    'Data Source=*******',
+    'Initial Catalog=*******',
     'Integrated Security=SSPI',)
 
 # NLP Model
     metas,snippets,seglabels,kws = [],[],[],[]
     vttfiles = [
-        mainDir+r'\Annotation\Samir\Snippets_450_SP_New2.vtt',
-        mainDir+r'\Annotation\Samir\Snippets_450_SP_4_Revision.vtt',
-        mainDir+r'\Annotation\Samir\Snippets_100_Common_Done.vtt'
+        mainDir+r'\Snippets_450_SP_New2.vtt',
+        mainDir+r\Snippets_450_SP_4_Revision.vtt',
+        mainDir+r\Snippets_100_Common_Done.vtt'
     ]
     for vttfile in vttfiles:
         metas_,snippets_,seglabels_,kws_ = ReadVTT(vttfile)
@@ -359,5 +359,6 @@ if __name__ == '__main__':
     print('C-Index: %.3f' %(c_stat*100))
     acc = metrics.accuracy_score(Y_test_final,Y_pred_final)
     print('Accuracy: %.3f' %(acc*100))
+
 
 
